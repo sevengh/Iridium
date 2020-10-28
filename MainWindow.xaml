@@ -11,6 +11,7 @@
     Height="450"
     WindowState="Maximized"
     WindowStyle="None"
+    KeyDown="Window_KeyDown"
     mc:Ignorable="d">
     <Grid>
         <wpf:ChromiumWebBrowser x:Name="Browser" Address="https://www.khanacademy.org/" />
