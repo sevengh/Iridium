@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iridium", "Iridium.csproj", "{23123A02-5308-4458-8B82-C38B10CBDA9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23123A02-5308-4458-8B82-C38B10CBDA9D}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{23123A02-5308-4458-8B82-C38B10CBDA9D}.Debug|Any CPU.Build.0 = Debug|x64
+		{23123A02-5308-4458-8B82-C38B10CBDA9D}.Release|Any CPU.ActiveCfg = Release|x64
+		{23123A02-5308-4458-8B82-C38B10CBDA9D}.Release|Any CPU.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64BE32FC-1938-45D6-8C03-B6A998E06B5B}
+	EndGlobalSection
+EndGlobal
