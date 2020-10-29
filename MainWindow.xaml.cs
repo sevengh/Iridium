@@ -33,6 +33,17 @@ namespace Iridium
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.Key == Key.F11 && WindowState != WindowState.Normal)
+            {
+                WindowState = WindowState.Normal;
+                WindowStyle = WindowStyle.SingleBorderWindow;
+            }
+            else if (e.Key == Key.F11 && WindowState == WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
+                WindowStyle = WindowStyle.None;
+            }
+
             if (e.Key == Key.F12)
                 isActiveSoundKeys = !isActiveSoundKeys;
 
