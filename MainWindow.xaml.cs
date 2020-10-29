@@ -34,9 +34,7 @@ namespace Iridium
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.F12)
-            {
                 isActiveSoundKeys = !isActiveSoundKeys;
-            }
 
             else if (e.Key == Key.VolumeMute && isActiveSoundKeys)
                 defaultPlaybackDevice.SetMuteAsync(!defaultPlaybackDevice.IsMuted);
