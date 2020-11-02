@@ -13,6 +13,9 @@
     WindowStyle="None"
     mc:Ignorable="d">
     <Grid>
-        <Frame NavigationUIVisibility="Hidden" Source="Pages/TitlePage.xaml" />
+        <Frame
+            Navigating="Frame_Navigating"
+            NavigationUIVisibility="Hidden"
+            Source="Pages/TitlePage.xaml" />
     </Grid>
 </Window>

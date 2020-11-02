@@ -24,6 +24,7 @@ namespace Iridium.Pages
         {
             InitializeComponent();
             Application.Current.MainWindow.KeyDown += new KeyEventHandler(Page_KeyDown);
+            Application.Current.MainWindow.MouseDown += new MouseButtonEventHandler(Page_MouseDown);
         }
 
         private void Page_KeyDown(object sender, KeyEventArgs e)
@@ -34,6 +35,7 @@ namespace Iridium.Pages
 
         private void Page_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            Application.Current.MainWindow.MouseDown -= new MouseButtonEventHandler(Page_MouseDown);
             NavigateBrowser();
         }
 

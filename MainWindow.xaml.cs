@@ -33,6 +33,11 @@ namespace Iridium
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
+#if DEBUG
+            if (e.Key == Key.Escape)
+                App.Current.Shutdown();
+#endif
+
             if (e.Key == Key.F11 && WindowState != WindowState.Normal)
             {
                 WindowState = WindowState.Normal;
@@ -55,6 +60,14 @@ namespace Iridium
 
             else if (e.Key == Key.VolumeDown && isActiveSoundKeys)
                 defaultPlaybackDevice.SetVolumeAsync(defaultPlaybackDevice.Volume - 1);
+        }
+
+        private void Frame_Navigating(object sender, NavigatingCancelEventArgs e)
+        {
+            if (e.NavigationMode == NavigationMode.Back)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
