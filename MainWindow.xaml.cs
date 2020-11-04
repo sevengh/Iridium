@@ -49,8 +49,10 @@ namespace Iridium
                 WindowStyle = WindowStyle.None;
             }
 
+#if DEBUG
             if (e.Key == Key.F12)
                 isActiveSoundKeys = !isActiveSoundKeys;
+#endif
 
             else if (e.Key == Key.VolumeMute && isActiveSoundKeys)
                 defaultPlaybackDevice.SetMuteAsync(!defaultPlaybackDevice.IsMuted);

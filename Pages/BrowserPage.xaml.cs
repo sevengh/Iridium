@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,20 @@ namespace Iridium.Pages
     {
         public BrowserPage()
         {
+            var path = System.IO.Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "Seven",
+                "Iridium",
+                "Cache"
+                );
+
+            var settings = new CefSettings
+            {
+                CachePath = path
+            };
+
+            CefSharp.Cef.Initialize(settings);
+
             InitializeComponent();
         }
     }
