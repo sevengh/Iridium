@@ -29,7 +29,7 @@ namespace Iridium
             defaultPlaybackDevice = new CoreAudioController().DefaultPlaybackDevice;
         }
 
-        bool isActiveSoundKeys = true;
+        readonly bool isActiveSoundKeys = true;
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {

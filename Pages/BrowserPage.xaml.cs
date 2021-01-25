@@ -1,18 +1,8 @@
-﻿using CefSharp.Wpf;
+﻿using CefSharp;
+using CefSharp.Wpf;
+using Iridium.Browser;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Iridium.Pages
 {
@@ -35,9 +25,11 @@ namespace Iridium.Pages
                 CachePath = path
             };
 
-            CefSharp.Cef.Initialize(settings);
+            Cef.Initialize(settings);
 
             InitializeComponent();
+
+            Browser.LifeSpanHandler = new SampleLifeSpanHandler();
         }
     }
 }
