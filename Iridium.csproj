@@ -154,7 +154,7 @@
       <Version>4.0.0-alpha5</Version>
     </PackageReference>
     <PackageReference Include="CefSharp.Wpf">
-      <Version>86.0.241</Version>
+      <Version>89.0.170</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
